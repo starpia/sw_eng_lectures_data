@@ -1,0 +1,11 @@
+#2017-10-30
+
+운영체제에서 제공하는 system calls
+
+system call : os가 제공하는 service를 사용
+
+ex) HW인 Hardisk를 file과 directory같은 형태로 '추상화' 해서 제공
+
+    HW인 CPU를 프로레스의 형태로 '추상화' 해서 제공
+
+

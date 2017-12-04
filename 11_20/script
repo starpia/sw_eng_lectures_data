@@ -1,0 +1,26 @@
+flow chart 내용
+
+fork -> exec : 새로운 프로세스로써 동작
+
+exit(status) : 자식이 끝났음을 알릴 수단
+
+exec는 자식이 call하는것
+
+exec argument 0 : 실행시킬 파일 경로
+	      1 : 실행시킬 파일 이름
+	      ...
+	      NULL : 더이상 arguments가 없음을 알림
+
+ps : show (my) processes
+
+ps -ef : show all processes
+
+ps -ef | grep 3641 : show all processes in 3641
+
+cd /proc/$(process id) : process의 정보 ( cpu 사용량... 등등 )
+-> man 2 proc 에서 이 정보들을 해석할 방법들을 찾아볼수있음
+
+zombie process : 자신은 종료되었으나 부모프로세스가 봐주지않음.
+
+execl(...) : 현재 프로세스를 arguments의 프로세스로 변경
+	     (이후 자신이 가진 code는 수행하지않음)
